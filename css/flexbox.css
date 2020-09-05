@@ -1,0 +1,51 @@
+
+/* FLEXBOX: Conjunto de propiedades CSS que sirven para posicionmar elementos en la web */
+
+/* Selector UNIVERSAL! */
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:32px;
+    background-color: aquamarine;
+    /* Esto me soluciona el espaciado rancio en blanco que siempre quedaba */
+    margin: 0;
+    padding: 0;
+    background-color: gray;
+}
+
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height:300px;
+    /* Posicionamiento horizontal */
+    justify-content: center;
+    align-content: center;
+    /* Posicionamiento vertical */
+    
+}
+
+.titulo{
+    height: 0;
+}
+
+.padding-texto{
+    text-align: center;
+}
+
+.col{
+    width: 70%;
+    height: 100px;
+    background-color: violet;
+    border: 2px solid hotpink;
+    border-radius: 6px;
+    /* margin-right: 20px; */
+    opacity: .8;
+}
+
+
+span{
+    font: size 22px;
+    color: green;
+    font-weight: bold;
+}

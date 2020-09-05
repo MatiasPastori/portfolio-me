@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+  <head>
+    <!-- Dentro de HEAD puede haber contenido como h1, p, etc. PERO NO ES CORRECTO!, google nos caga a putiadas y baja nuestro page rank, esta seccion es solo para meta informacion -->
+    <!-- Esta es la codificacion que usara, es necesario por el tema de los caracteres!, en latinoamerica nos interesa que se vean las ñ, los tildes, etc, para rusia debe ser distinto, para USA debe ser distinto tambien. -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Windows + . == Emojis -->
+    <title>Portfolio 👌</title>
+    <!-- Codigo de CSS & JS -->
+    <link rel="stylesheet" href="CSS/styles.css" />
+    <link rel="stylesheet" href="CSS/flexbox.css">
+  </head>
+  <body>
+    <!--  W3School! -->
+    <!-- Contenido visible -->
+    <!-- Titulo de nivel -->
+    <!-- Google "penaliza" si usamos mas de un h1, pues no esta bien visto semanticamente, baja nuestro page rank -->
+
+    <!-- El header, no afecta de ninguna forma la parte estetica, pero si mejora muchisimo el ranking de SEO para nuestra pagina :D -->
+    <header>
+      <h1>Matias Pastori</h1>
+      <h4>Web Developer</h4>
+    </header>
+
+    <!-- Que es la etiqueta "main" ?  Esta etiqueta realza la importancia de este contenido concretamente-->
+    <!-- Sirve por ejemplo para "Keyword" para rezaltar tags concretos -->
+
+    <!-- SEO & SEM, Organico  / Pago (marketing) -->
+    <nav>
+      <a href="contacto.html">Contacto</a>
+      <a href="videos.html">Videos</a>
+    </nav>
+
+    <hr />
+    <a href="http://google.com" target="_blank"
+      ><img
+        src="images/CV.png"
+        width="100px"
+        height="100px"
+        alt="Foto del autor del sitio"
+    /></a>
+
+    <!-- Empezamos a separar nuestra pagina en secciones para una mejor legibildiad :D y mejorar nuestro ranking -->
+    <!-- No hay problemas con los H2 -->
+    <section class="margin-titulo">
+      <hr />
+      <h2 class="tomato destacar subrayar padding-titulo">About me</h2>
+
+      <!-- H2 indica contenido relacionado o no con H1  -->
+      <p class="destacar-parrafo">
+        Me comenzo a gustar la programacion cuando curse Algoritmos y estrucuras de datos en la carrera
+        Ingienieria en sistemas de informacion en la <strong>UTN FRBA</strong> me toco un docente que tenia la idea de darnos herramientas basicas y nos proponia ejercicios dificiles, practicamente desarrollamos toda una biblioteca de funciones para el manejo de strings en C++, todo para que luego nos diera la libreria ya testeada y oficial. Esto me sirvio mucho para desarrollar mi pensamiento algoritmico y ser capaz de entender que pasa detras.
+      </p>
+
+      <p>Insertar meme aqui!</p>
+      <!-- Si la imagen "se rompe" siemppre debe haber un atributo alt, que le de una descripcion -->
+      <img
+        src="images/rappi.jpeg"
+        width="300px"
+        height="400px"
+        alt="Esto antes era un meme"
+      />
+
+      <p>Me gustan los 
+        <ul>
+          <li><b>gatitos 🐈</b></li>
+          <li>conejos 🐇</li>
+          <li>tortugas 🐢</li>
+        </ul></p>
+      <hr />
+    </section>
+
+    <section class="margin-titulo">
+      <h2 class="destacar oliva subrayar">Donde trabajo?</h2>
+      <main>
+        <a href="" target="_blank">Deloitte</a>
+        <!-- Atributos! -->
+        <!-- propiedad = "valor" -->
+        <!--"href" hyper reference. a donde voy a ir? -->
+        <!-- "target" donde se abre? pag nueva? pagina en blanco? -->
+        <!--  -->
+        <p>Soy un Consultor en Identity and Access Management en <span>Deloitte Argentina</span> </p>
+
+        <hr />
+        <!-- Los h3 se refieren a subtitulos -->
+        <h2>Proyectos en curso</h2>
+        <ul>
+          <li>Videojuego: Langradigmas</li>
+          <li>Portfolio</li>
+          <li>Landing page para una startup ficticia</li>
+          <li>Generador de nombres por pais (fetchAPI & AJAX)</li>
+        </ul>
+
+        <hr />
+      </main>
+    </section>
+
+    <section class="margin-titulo">
+      <h2 class="destacar tomato subrayar">Hobbies / Intereses</h2>
+
+      <ol>
+        <li>Astronomia</li>
+        <li>Desarrollo Web</li>
+        <li>Sociologia</li>
+        <li></li>
+      </ol>
+
+      <hr />
+      <hr />
+      
+      <p>Soy un elemento de bloque!</p>
+      <span> Soy un elemento de linea!</span>
+
+      <!-- Div es un elemento generico, y es de bloque al igual que un p -->
+      <!-- Box model!! --- Cajas === Etiquetas de bloque, div, p, TODOS SON CAJAS (menos los de linea) -->
+
+      <div>
+        <p>Soy un texto de ejemplo</p>
+      </div>
+      <hr />
+    </section>
+
+    <!--  ETIQUETAS SEMANTICAS!!!! :D GRAN UPDATE - Mejora el SEO para la pagina y ademas se entiende mejor el contenido del archivo HTML -->
+    <!-- Header, nav, section, article, aside, footer, address-->
+    <!-- Ojo, ESTAS ETIQUETAS NO PRODUCEN NINGUN CAMBIO VISUAL
+    Son solo para una mejor lectura y mejor separacion de secciones! -->
+    <footer>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.634000813222!2d-58.41768428425628!3d-34.63868826685734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb0847171e47%3A0x39394484a7830af8!2sDeloitte!5e0!3m2!1ses-419!2sar!4v1597961996007!5m2!1ses-419!2sar"
+        width="100%"
+        height="450"
+        frameborder="0"
+        style="border: 0;"
+        allowfullscreen=""
+        aria-hidden="false"
+        tabindex="0"
+      ></iframe>
+
+      <br />
+      <hr />
+
+      <!-- La etiqueta article suele ir dentro de section -->
+
+      <address>Av.Caseros 3563 C1263</address>
+      <p><b>Copyright © 1999-2020 Matias Pastori</b></p>
+    </footer>
+
+    <div class="cuadrado-ordinario destacar" >Oli</div>
+  </body>
+</html>

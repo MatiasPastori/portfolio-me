@@ -1,0 +1,107 @@
+h1,
+h4 {
+  color: white;
+  font-size: 42px;
+  text-align: center;
+  font-family: Georgia, "Times New Roman", "Arial";
+  font-style: italic;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+header {
+  background-color: darkslategray;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.destacar {
+  color: purple;
+  background-color: black;
+  font-family: Impact, "Arial Narrow Bold", sans-serif;
+  text-align: center;
+  border-style: solid;
+  border: 3px solid tomato;
+  border-radius: 10px;
+
+}
+
+.cuadrado-ordinario{
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+}
+
+.mas-despacio-cerebrito{
+  background: olive;
+}
+
+
+.subrayar-arriba {
+  text-decoration: overline;
+}
+
+.marging-titulo{
+  margin-top: 50px;
+}
+
+.padding-titulo{
+  padding-top: 20px;
+  padding-bottom: 18px;
+}
+
+.tachar{
+  text-decoration: line-through;
+}
+
+.subrayar {
+  text-decoration: underline;
+}
+
+.tomato {
+  color: tomato;
+}
+
+.oliva {
+  color: olive;
+}
+
+.destacar-parrafo {
+  font-size: 30px;
+}
+
+p > span {
+  color: cyan;
+}
+
+
+/* PSEUDO CLASES, esta es la forma correcta de modificar el estilo de un enlace */
+
+
+/* el enlace por ejemplo ya tiene por defecto comportamientos definidos
+Por ejemplo el cambio del puntero cuando estamos encima, el cambio de color al cambiarlo */
+
+/* No visitado! */
+a:link{
+  text-decoration:none;
+}
+
+a:visited{
+  text-decoration:none;
+}
+
+a:active{
+  text-decoration: none;
+  color: greenyellow;
+}
+/* Hasta aca estas son PROPIAS DE LOS ENLACES a */
+
+a:hover{
+  text-decoration: none;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size:80px;
+  background-color: goldenrod;
+}
+

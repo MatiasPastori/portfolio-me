@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejemplo de formulario 😊</title>
+  </head>
+  <body>
+    <!-- Solo un H1 por pagina, representa el contenido principal -->
+    <h1>Ejemplo de formularios</h1>
+    <h2>Ejemplo de Login</h2>
+
+    <!-- Method: COMO envio la info? / action: A donde vamos a enviar la info? Si estamos probando podemos dejarlo como "#" no hara nada -->
+    <!-- El metodo get pasara por URL, y lo podemos ver de hecho con los atributos name, que van a cargarse en la URL -->
+    <form method="GET" action="#">
+      <!-- Required, es en este caso una variable de valor booleano, por defecto es true, entonces no es atributo = "valor" -->
+      <!-- Es una condicion por omision, si esta, es porque es verdadero -->
+      <!-- Yo aca puedo poner validaciones, pero de todas formas se hacen realmente en el BACKEND, ya que el front puede ser facilmente vulnerado -->
+      <input type="text" name="usuario" placeholder="Usuario" required maxlength="5"/>
+      <input type="password" name="password" placeholder="Contraseña" required />
+      <!-- Este formato de inputo para button es feo -->
+      <!-- <input type="button" value="Ingresar 😊"> -->
+
+      <button>Ingresa 😊</button>
+    </form>
+
+    <!-- CADA INPUT DE UNA FORM, DEBE TENER UN ATRIBUTO name! Sirve para el manejo de esta informacion en el backend -->
+    <h2>REGISTRO :D</h2>
+    <form method="POST" action="#">
+        <!-- Label es un elemento de linea, al igual que el input -->
+        <!-- el atributo fro, relaciona el label con el input del mismo atributo name. -->
+        <label for="usuario">Nombre *</label>
+        <br>
+        <input type="text" id="usuario" placeholder="Usuario" required />
+        <!-- LOS ID son UNICOS en todo el html, no se pueden repetir en otros elementos -->
+        <br>
+        <label for="apellido">Apellido *</label>
+        <br>
+        <input type="text" id="apellido" placeholder="Apellido" required maxlength="30"/>
+        <br>
+        <label for="email">Correo electronico</label>
+        <br>
+        <!-- Los inputs resultan ser Expresiones Regulares, y eso es GENIAL! Definen el tipo de input que aceptaran. -->
+        <input type="email" name="email" id="email" required placeholder="Su correo" >
+        <br>
+        <label for="cumple">Cumple</label>
+        <br>
+        <!-- Otro type! Este calendario que se genera, lo genera el navegador! que es el que interpreta el HTML-->
+        <input type="date" name="cumple" id="cumple" required >
+        <br>
+        <label for="telefono">Telefono</label>
+        <!-- Otro tipo de input! -->
+        <br>
+        <input type="tel" name="telefono" id="telefono" required placeholder="Numero de telefono">
+        <br>
+        <label for="color">Color favorito</label>
+        <br>
+        <input type="color" name="color" id="color">
+        <br>
+        <label for="nacionalidad">Nacionalidad</label>
+        <br>
+        <select name="nacionalidad" id="nacionalidad">
+            <option value="AR">AR</option>
+            <option value="BR">BR</option>
+            <option value="UR">UR</option>
+            <option value="CL">CL</option>
+        </select>
+        <br>
+        <!-- si le ponemos el mismo name a todos los radio, lo que hacemos es que no sea posible seleccionar todos la mismo tiempo! -->
+        <!-- En este caso, esto es solo para que funcione, pero al backend le va a llegar solo "seleccionado" y no va a saber que hacer con esa data.-->
+        <!-- Para diferenciar los datos, justamente le agregamos el atributo "value"! -->
+        <label for="mujer">Mujer</label>
+        <input type="radio" name="selccionado" id="mujer" value="mujer">
+        <label for="hombre">Hombre</label>
+        <input type="radio" name="selccionado" id="hombre" value="hombre">
+        <label for="personalizado">Personalizado</label>
+        <input type="radio" name="selccionado" id="personalizado" value="personalizado">
+        <button>Registrate! 😊</button>
+    </form>
+
+
+  </body>
+</html>
+
+
